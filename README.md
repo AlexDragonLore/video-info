@@ -1,19 +1,48 @@
-# Video Scripts
+# video-info
 
-Public repository for video scripts, drafts, and production notes.
+Репозиторий для сценариев, идей, структуры роликов и заметок по производству.
 
-## Structure
+## Главное правило
 
-- `scripts/` - finished scripts and working drafts.
-- `templates/` - reusable templates for new videos.
+Каждое новое видео хранится в отдельной папке в корне репозитория.
 
-## Suggested Workflow
+Формат названия папки:
 
-1. Copy `templates/video-script.md` into `scripts/`.
-2. Rename the file using a clear date or topic, for example `2026-05-13-channel-intro.md`.
-3. Fill in the metadata block at the top of the file.
-4. Keep drafts in Git so every version of the script is saved.
+```text
+NN-video-name
+```
 
-## Rights
+Примеры:
 
-All scripts are copyrighted by their author unless a specific file says otherwise.
+```text
+01-spor-na-100k-ai-site
+02-zapusk-servisa-s-nulya
+03-oshibki-v-ai-proekte
+```
+
+Правила:
+
+- номер всегда двухзначный: `01`, `02`, `03`;
+- после номера ставится дефис;
+- название папки пишется коротко, латиницей, маленькими буквами;
+- вместо пробелов используется дефис;
+- для каждого нового видео создается новая папка;
+- номер уже созданной папки не меняется, даже если порядок публикации потом изменится.
+
+## Структура папки видео
+
+Внутри каждой папки видео:
+
+```text
+01-video-name/
+  README.md       # короткое описание ролика
+  brief.md        # идея, конфликт, герои, ставка
+  script.md       # сценарий
+  production.md   # визуал, реквизит, монтаж, заметки
+```
+
+Содержимое файлов пишется на русском. Названия файлов и папок остаются латиницей, чтобы ссылки и пути были удобнее.
+
+## Текущее видео
+
+- `01-spor-na-100k-ai-site` - два друга спорят на 100 000 рублей, кто сможет заработать больше, создав ИИ-сайт.
